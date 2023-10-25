@@ -1,10 +1,11 @@
-var displayName = function (myName) { return "My name is " + myName; };
+"use strict";
+const displayName = (myName) => "My name is " + myName;
 // console.log(displayName(true));    // flagged by typescript but not by javascript
 console.log(displayName('Tochi'));
 // Arrays
-var numbers = [10, 20, 30, 40];
-var animals = ['cat', 'dog', 'parrot'];
-var mixedTypes = ['Luigi', true, 'black belt', 3];
+let numbers = [10, 20, 30, 40];
+let animals = ['cat', 'dog', 'parrot'];
+let mixedTypes = ['Luigi', true, 'black belt', 3];
 numbers.push(50);
 // numbers.push('60');  // not allowed
 animals[2] = 'bird';
@@ -13,7 +14,7 @@ mixedTypes.push('Antonio');
 mixedTypes[1] = false;
 console.log(numbers, animals, mixedTypes);
 // Objects
-var user = {
+let user = {
     name: 'Leonardo',
     age: 45,
     isMarried: true
@@ -32,15 +33,15 @@ user = {
 };
 console.log(user);
 // Explicit type - declaring variables, arrays, & objects
-var score;
-var userId;
-var arrayOne;
-var arrayTwo = [];
-var arrayThree = [];
-var objOne;
-var objTwo;
+let score;
+let userId;
+let arrayOne;
+let arrayTwo = [];
+let arrayThree = [];
+let objOne;
+let objTwo;
 // Dynamic type
-var unknownOne;
-var unknowTwo = 6;
+let unknownOne;
+let unknowTwo = 6;
 unknowTwo = 'John';
 console.log(unknowTwo);
