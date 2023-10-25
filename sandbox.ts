@@ -44,3 +44,19 @@ user = {
 };
 
 console.log(user)
+
+// Explicit type - declaring variables, arrays, & objects
+
+let score: number;
+let userId: string | number;
+
+let arrayOne: string[];
+let arrayTwo: number[] = [];
+let arrayThree: (string | number | boolean)[] = [];
+
+let objOne: object;
+let objTwo: {
+    id: number,
+    title: string,
+    body: string
+}

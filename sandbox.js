@@ -31,3 +31,11 @@ user = {
     isMarried: false
 };
 console.log(user);
+// Explicit type - declaring variables, arrays, & objects
+var score;
+var userId;
+var arrayOne;
+var arrayTwo = [];
+var arrayThree = [];
+var objOne;
+var objTwo;
