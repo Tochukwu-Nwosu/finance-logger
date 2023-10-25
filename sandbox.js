@@ -1,6 +1,3 @@
-var heading = document.querySelector('h1');
-var inputs = document.querySelectorAll('input');
-console.log(heading);
-inputs.forEach(function (input) {
-    console.log(input);
-});
+var displayName = function (myName) { return "My name is " + myName; };
+// console.log(displayName(true));    // flagged by typescript but not by javascript
+console.log(displayName('Tochi'));
