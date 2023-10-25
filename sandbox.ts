@@ -60,3 +60,12 @@ let objTwo: {
     title: string,
     body: string
 }
+
+// Dynamic type
+
+let unknownOne: any;
+let unknowTwo: any = 6;
+
+unknowTwo = 'John';
+
+console.log(unknowTwo);

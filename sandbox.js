@@ -39,3 +39,8 @@ var arrayTwo = [];
 var arrayThree = [];
 var objOne;
 var objTwo;
+// Dynamic type
+var unknownOne;
+var unknowTwo = 6;
+unknowTwo = 'John';
+console.log(unknowTwo);
