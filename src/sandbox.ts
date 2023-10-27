@@ -1,7 +1,7 @@
 const displayName = (myName: string) => "My name is " + myName;
 
 // console.log(displayName(true));    // flagged by typescript but not by javascript
-// console.log(displayName('Tochi'));
+console.log(displayName('Tochi'));
 
 // Arrays
 
@@ -18,7 +18,7 @@ animals[2] = 'bird';
 mixedTypes.push('Antonio');
 mixedTypes[1] = false;
 
-// console.log(numbers, animals, mixedTypes);
+console.log(numbers, animals, mixedTypes);
 
 // Objects
 
@@ -43,7 +43,7 @@ user = {
     isMarried: false
 };
 
-// console.log(user)
+console.log(user)
 
 // Explicit type - declaring variables, arrays, & objects
 
@@ -68,4 +68,4 @@ let unknowTwo: any = 6;
 
 unknowTwo = 'John';
 
-// console.log(unknowTwo);
+console.log(unknowTwo);
