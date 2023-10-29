@@ -68,4 +68,4 @@ let unknowTwo: any = 6;
 
 unknowTwo = 'John';
 
-console.log(unknowTwo);
+// console.log(unknowTwo);
