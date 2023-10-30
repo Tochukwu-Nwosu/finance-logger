@@ -1,7 +1,7 @@
 "use strict";
 const displayName = (myName) => "My name is " + myName;
 // console.log(displayName(true));    // flagged by typescript but not by javascript
-console.log(displayName('Tochi'));
+// console.log(displayName('Tochi'));
 // Arrays
 let numbers = [10, 20, 30, 40];
 let animals = ['cat', 'dog', 'parrot'];
@@ -12,7 +12,7 @@ animals[2] = 'bird';
 // animals[1] = 9;   // not allowed
 mixedTypes.push('Antonio');
 mixedTypes[1] = false;
-console.log(numbers, animals, mixedTypes);
+// console.log(numbers, animals, mixedTypes);
 // Objects
 let user = {
     name: 'Leonardo',
@@ -31,7 +31,7 @@ user = {
     age: 20,
     isMarried: false
 };
-console.log(user);
+// console.log(user)
 // Explicit type - declaring variables, arrays, & objects
 let score;
 let userId;
@@ -44,4 +44,16 @@ let objTwo;
 let unknownOne;
 let unknowTwo = 6;
 unknowTwo = 'John';
-console.log(unknowTwo);
+// console.log(unknowTwo);
+// Function
+const add = (a, b = 10, c) => {
+    console.log(a + b);
+    console.log(c); // c is optional, which is a number | undefined
+};
+add(2, 10, 3);
+const display = (a, b) => {
+    console.log('b: ' + b);
+    return a;
+};
+let result = display(23, '5');
+console.log(result);
