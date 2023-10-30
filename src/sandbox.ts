@@ -71,9 +71,17 @@ unknowTwo = 'John';
 // console.log(unknowTwo);
 
 // Function
+
+let greet: Function;
+greet = () => {
+    console.log('Hello, World!')
+}
+
+greet();
+
 const add = (a: number, b: number = 10, c?: number) => {
     console.log(a + b);
-    console.log(c)  // c is optional, which is a number | undefined
+    console.log(c);  // c is optional, which is a number | undefined
 }
 
 add(2, 10, 3);

@@ -46,6 +46,11 @@ let unknowTwo = 6;
 unknowTwo = 'John';
 // console.log(unknowTwo);
 // Function
+let greet;
+greet = () => {
+    console.log('Hello, World!');
+};
+greet();
 const add = (a, b = 10, c) => {
     console.log(a + b);
     console.log(c); // c is optional, which is a number | undefined
