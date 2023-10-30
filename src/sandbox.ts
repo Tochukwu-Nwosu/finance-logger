@@ -73,23 +73,38 @@ unknowTwo = 'John';
 // Function
 
 let greet: Function;
+
 greet = () => {
     console.log('Hello, World!')
 }
 
-greet();
+// greet();
 
 const add = (a: number, b: number = 10, c?: number) => {
     console.log(a + b);
     console.log(c);  // c is optional, which is a number | undefined
 }
 
-add(2, 10, 3);
+// add(2, 10, 3);
 
 const display = (a: number, b?: number | string): number => {
     console.log('b: ' + b);
     return a;
 }
 
-let result = display(23, '5');
-console.log(result);
+// let result = display(23, '5');
+// console.log(result);
+
+// Type Aliases
+
+type user = {id: number | string, name: string, age: number} // this is an aliase type
+
+const userInfo = (user:  user) => {
+    console.log(`Hi, I am ${user.name} and I am ${user.age} years old`);
+}
+
+userInfo({
+    id: '1234',
+    name: 'John',
+    age: 54
+});

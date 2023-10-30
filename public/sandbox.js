@@ -50,15 +50,21 @@ let greet;
 greet = () => {
     console.log('Hello, World!');
 };
-greet();
+// greet();
 const add = (a, b = 10, c) => {
     console.log(a + b);
     console.log(c); // c is optional, which is a number | undefined
 };
-add(2, 10, 3);
+// add(2, 10, 3);
 const display = (a, b) => {
     console.log('b: ' + b);
     return a;
 };
-let result = display(23, '5');
-console.log(result);
+const userInfo = (user) => {
+    console.log(`Hi, I am ${user.name} and I am ${user.age} years old`);
+};
+userInfo({
+    id: '1234',
+    name: 'John',
+    age: 54
+});
