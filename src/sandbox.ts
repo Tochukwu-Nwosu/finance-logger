@@ -108,3 +108,25 @@ userInfo({
     name: 'John',
     age: 54
 });
+
+// Function signatures
+
+/* Function signature specifies the structure of the fuction assigned to a variable
+   by defining the type of the parameter(s), and the return type of the function
+*/
+
+let welcome: (a: string) => void;            // function signature: parameter type & return type
+
+welcome = (name: string) => {
+    console.log('Welcome back, ' + name);
+}
+
+
+let logDetails: (a: {name: string, age: number}) => string;     // function signature
+
+type person = {name: string, age: number};                      // type aliase
+
+logDetails = (user: person) => {
+
+    return `${user.name} is ${user.age} years old`;
+}
