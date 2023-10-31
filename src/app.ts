@@ -18,5 +18,5 @@ form.addEventListener('submit', (e: Event) => {
         amount: amount.valueAsNumber
     };
 
-    console.log(values);
+    // console.log(values);
 });
