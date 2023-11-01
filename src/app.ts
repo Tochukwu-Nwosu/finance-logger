@@ -1,4 +1,4 @@
-
+// get form element
 let form = document.querySelector('.new-item-form') as HTMLFormElement;
 
 // get input fields
@@ -7,7 +7,7 @@ let toFrom = document.querySelector('#tofrom') as HTMLInputElement;
 let details = document.querySelector('#details') as HTMLInputElement;
 let amount = document.querySelector('#amount') as HTMLInputElement;
 
-
+// form event
 form.addEventListener('submit', (e: Event) => {
     e.preventDefault();
 
