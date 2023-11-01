@@ -1,4 +1,5 @@
 import { Invoivce } from "./classes/Invoice.js";
+import { Payment } from "./classes/Payment.js";
 // interface IsPerson {
 //     name: string;
 //     age: number;
@@ -18,16 +19,12 @@ import { Invoivce } from "./classes/Invoice.js";
 //     }
 // }
 // console.log(me);
-const invoiceOne = new Invoivce('Donald', 'work on website', 300);
-const invoiceTwo = new Invoivce('Bill', 'work on plumbing', 100);
-// console.log(invoiceOne.client, invoiceOne.details, invoiceOne.amount, invoiceOne.format());
-// console.log(invoiceTwo.client, invoiceTwo.details, invoiceTwo.amount, invoiceTwo.format());
-const invoices = [];
-invoices.push(invoiceOne);
-invoices.push(invoiceTwo);
-// invoices.forEach( invoice => {
-//     console.log(invoice);
-// })
+// let doc1: HasFormatter;
+// let doc2: HasFormatter;
+// doc1 = new Invoivce('Donald', 'work on website', 300);
+// doc2 = new Payment('Bill', 'work on plumbing', 100);
+// console.log(doc1);
+// console.log(doc2);
 // get form element
 let form = document.querySelector('.new-item-form');
 // get input fields
@@ -38,11 +35,19 @@ let amount = document.querySelector('#amount');
 // form event
 form.addEventListener('submit', (e) => {
     e.preventDefault();
+    let doc;
+    if (type.value === 'invoice') {
+        doc = new Invoivce(toFrom.value, details.value, amount.valueAsNumber);
+    }
+    else {
+        doc = new Payment(toFrom.value, details.value, amount.valueAsNumber);
+    }
+    console.log(doc);
     let values = {
         type: type.value,
         toFrom: toFrom.value,
         details: details.value,
         amount: amount.valueAsNumber
     };
-    console.log(values);
+    // console.log(values);
 });
