@@ -1,4 +1,5 @@
 // invoice class
+import { HasFormatter } from "../interface/HasFormatter";
 
 export class Invoivce{
     client: string;

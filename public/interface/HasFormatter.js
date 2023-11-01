@@ -1,0 +1,2 @@
+// HasFormatter interface
+export {};

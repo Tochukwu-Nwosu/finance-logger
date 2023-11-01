@@ -1,16 +1,23 @@
 import { Invoivce } from "./classes/Invoice.js";
-const me = {
-    name: 'Trump',
-    age: 70,
-    isMarried: true,
-    speak() {
-        console.log('Hi');
-    },
-    add(num1, num2) {
-        return num1 + num2;
-    }
-};
-console.log(me);
+// interface IsPerson {
+//     name: string;
+//     age: number;
+//     isMarried: boolean;
+//     speak(): void;
+//     add(a: number, b: number): number; 
+// }
+// const me: IsPerson = {
+//     name: 'Trump',
+//     age: 70,
+//     isMarried: true,
+//     speak() {
+//         console.log('Hi');
+//     },
+//     add(num1, num2) {
+//         return num1 + num2;
+//     }
+// }
+// console.log(me);
 const invoiceOne = new Invoivce('Donald', 'work on website', 300);
 const invoiceTwo = new Invoivce('Bill', 'work on plumbing', 100);
 // console.log(invoiceOne.client, invoiceOne.details, invoiceOne.amount, invoiceOne.format());
