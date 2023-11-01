@@ -1,4 +1,16 @@
 import { Invoivce } from "./classes/Invoice.js";
+const me = {
+    name: 'Trump',
+    age: 70,
+    isMarried: true,
+    speak() {
+        console.log('Hi');
+    },
+    add(num1, num2) {
+        return num1 + num2;
+    }
+};
+console.log(me);
 const invoiceOne = new Invoivce('Donald', 'work on website', 300);
 const invoiceTwo = new Invoivce('Bill', 'work on plumbing', 100);
 // console.log(invoiceOne.client, invoiceOne.details, invoiceOne.amount, invoiceOne.format());
@@ -6,9 +18,9 @@ const invoiceTwo = new Invoivce('Bill', 'work on plumbing', 100);
 const invoices = [];
 invoices.push(invoiceOne);
 invoices.push(invoiceTwo);
-invoices.forEach(invoice => {
-    console.log(invoice);
-});
+// invoices.forEach( invoice => {
+//     console.log(invoice);
+// })
 // get form element
 let form = document.querySelector('.new-item-form');
 // get input fields
