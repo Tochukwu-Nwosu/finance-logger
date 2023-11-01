@@ -1,15 +1,4 @@
-"use strict";
-// invoice class
-class Invoivce {
-    constructor(a, b, c) {
-        this.client = a;
-        this.details = b;
-        this.amount = c;
-    }
-    format() {
-        return `${this.client} owes £${this.amount} for ${this.details}`;
-    }
-}
+import { Invoivce } from "./classes/Invoice.js";
 const invoiceOne = new Invoivce('Donald', 'work on website', 300);
 console.log(invoiceOne.client, invoiceOne.details, invoiceOne.amount, invoiceOne.format());
 // get form element
