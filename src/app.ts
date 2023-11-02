@@ -50,7 +50,6 @@ form.addEventListener('submit', (e: Event) => {
     e.preventDefault();
 
     let values: [string, string, number];
-
     values = [toFrom.value, details.value, amount.valueAsNumber];
 
     let doc: HasFormatter;
