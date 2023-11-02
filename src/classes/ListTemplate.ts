@@ -11,9 +11,9 @@ export class ListTemplate {
     render(item: HasFormatter, heading: string, position: 'start' | 'end') {
         let list = document.createElement('li');
 
-        let h2 = document.createElement('h2');
-        h2.innerText = heading;
-        list.append(h2);
+        let h4 = document.createElement('h4');
+        h4.innerText = heading;
+        list.append(h4);
 
         let p = document.createElement('p');
         p.innerText = item.format();              // 'item' can be Invoice or Payment object
