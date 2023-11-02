@@ -10,7 +10,7 @@ This project was developed using:
 - Typescript
 
 ## Visit site
-[data-finace](https://tk-data-finance.netlify.app)
+[Finance-logger](https://tk-finance-logger.vercel.app)
 
 
 ## Contribution
