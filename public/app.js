@@ -51,19 +51,7 @@ form.addEventListener('submit', (e) => {
     };
     // console.log(values);
 });
-// GENERICS
-const print = (obj) => obj; // T represents a generic type
-const printObj = print({ name: 'John', age: 40 });
-console.log(printObj.name);
-// the same block of code but different data type for 'data' prop.
-const res1 = {
-    name: 'James Bond',
-    department: 'MI6',
-    data: { mission: 'Secure the package' }
-};
-const res2 = {
-    name: 'Angelina',
-    department: 'Grocery',
-    data: ['Bread', 'Milk', 'Egg']
-};
-console.log(res1, res2);
+// Tuple
+let student = ['John', 123];
+student = ['Jane', 456];
+// student = [true, 123]; // this is not allowed

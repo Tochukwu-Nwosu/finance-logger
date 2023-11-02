@@ -70,34 +70,9 @@ form.addEventListener('submit', (e: Event) => {
 });
 
 
-// GENERICS
+// Tuple
 
-const print = <T> (obj: T) => obj;        // T represents a generic type
+let student: [string, number] = ['John', 123];
 
-const printObj = print({ name: 'John', age: 40 });
-
-console.log(printObj.name);
-
-
-interface Resource <T> {
-    name: string;
-    department: string;
-    data: T;
-}
-
-// the same block of code but different data type for 'data' prop.
-
-const res1: Resource <object> = {
-    name: 'James Bond',
-    department: 'MI6',
-    data: { mission: 'Secure the package'}
-}
-
-const res2: Resource <string[]> = {
-    name: 'Angelina',
-    department: 'Grocery',
-    data: ['Bread', 'Milk', 'Egg']
-
-}
-
-console.log(res1, res2);
+student = ['Jane', 456];
+// student = [true, 123]; // this is not allowed
