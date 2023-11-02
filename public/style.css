@@ -5,6 +5,7 @@ body {
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
+    padding-inline: 10px;
 }
 h1 {
     margin: 40px auto;
