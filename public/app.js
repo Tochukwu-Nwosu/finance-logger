@@ -35,23 +35,14 @@ let amount = document.querySelector('#amount');
 // form event
 form.addEventListener('submit', (e) => {
     e.preventDefault();
+    let values;
+    values = [toFrom.value, details.value, amount.valueAsNumber];
     let doc;
     if (type.value === 'invoice') {
-        doc = new Invoivce(toFrom.value, details.value, amount.valueAsNumber);
+        doc = new Invoivce(...values);
     }
     else {
-        doc = new Payment(toFrom.value, details.value, amount.valueAsNumber);
+        doc = new Payment(...values);
     }
     console.log(doc);
-    let values = {
-        type: type.value,
-        toFrom: toFrom.value,
-        details: details.value,
-        amount: amount.valueAsNumber
-    };
-    // console.log(values);
 });
-// Tuple
-let student = ['John', 123];
-student = ['Jane', 456];
-// student = [true, 123]; // this is not allowed
